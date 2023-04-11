@@ -1,0 +1,34 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bigelow Tech Blog</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="jass.css">
+</head>
+
+<div class="text-center">
+    <h2>Welcome, {{name}}!</h2>
+</div>
+
+<div class="card col-10 mx-auto">
+    <div class="card-header text-center bg-primary text-light">
+      <h4>Create a New Blogpost:</a></h4>
+    </div>
+    <div class="card-body">
+        <form class="form new-blogpost-form">
+            <div class="form-group">
+              <label for="blogpost-title">Blogpost title:</label>
+              <input class="form-input col-12" type="text" id="blogpost-title" name="blogpost-title" />
+            </div>
+            <div class="form-group">
+              <label for="blogpost-text">Text:</label>
+              <textarea class="form-input col-12" id="blogpost-text" name="blogpost-text"></textarea>
+            </div>
+            <div class="form-group text-center">
+              <button type="submit" class="btn btn-primary col-4">Create</button>
+            </div>
+          </form>
+    </div>
+</div>
