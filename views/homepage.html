@@ -10,15 +10,26 @@
 </head>
 <!--  -->
 
-<div class="jumbotron text-center">
-    <h1 class="display-4">Bigelow Tech Blog</h1>
-</div>
+<!-- NAVBAR -->
+<!-- How do I make it so the navbar is always at the top? -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="mx-auto text-light" id="navbar-div">
+    <ul class="navbar-nav" id="navbar-list">
+      <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Logout</a></li>
+    </ul>
+  </div>
+</nav>
 
+<!-- BLOGPOST -->
+{{#each blogposts as |blogpost| }}
 <div class="card">
-    <div class="card-header text-center">
-      <h3>Blog title</h3>
-    </div>
-    <div class="card-body">
-      <p class="card-text">Blog text</p>
-    </div>
+  <div class="card-header text-center bg-primary text-light">
+    <h4><a href="/blogpost/{{blogpost.id}}">{{blogpost.name}}</a></h4>
+  </div>
+  <div class="card-body">
+    <p class="card-text">Blog text</p>
+  </div>
 </div>

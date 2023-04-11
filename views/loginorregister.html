@@ -1,0 +1,50 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bigelow Tech Blog</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="jass.css">
+</head>
+
+<body>
+
+<div class="card col-6 mx-auto mt-3" id="create-acct-div">
+  <form class="login-form d-flex" id="login-form"></form>
+    <h4 class="mx-auto">Already registered? Login here</h4>
+    <h5>Input email</h5>
+    <input class="email-input input" id="email-input" type="text" placeholder="Email">
+    <!-- <input class="form-input" type="text" id="email-login" /> -->
+    <h5>Input password</h5>
+    <input class="password-input" id="password-input" type="text" placeholder="Password" id="password-input">
+    <div class="mx-auto mt-3 mb-2" id="login-buttons-div">
+      <label for="login-submit-btn col-12">
+        <input
+          type="submit"
+          id="login-submit-btn"
+          class="login-submit-btn btn btn-primary col-12"
+          value="Submit"
+        />
+      </label>
+    </div>     
+  </form>
+</div>
+
+<div class="card col-6 mx-auto mt-3" id="create-acct-div">
+  <form class="create-acct-form d-flex" id="create-acct-form"></form>
+    <h4 class="mx-auto">Not yet registered? Create an account here</h4>
+    <h5>Input full name</h5>
+    <input class="input new-name-input"  id="new-name-input" type="text" placeholder="Full name">
+    <h5>Input email</h5>
+    <input class="input new-email-input" id="new-email-input" type="text" placeholder="Email">
+    <h5>Input new password</h5>
+    <input class="input new-password-input" id="new-password-input" type="text" placeholder="Password">
+    <h5>Verify new password</h5>
+    <input class="input new-password-verification" type="text" placeholder="Password">       
+    <button class="acct-submit-btn btn btn-primary col-6 mx-auto mt-3 mb-3" id="acct-submit-btn">Submit</button>
+  </form>
+</div>
+
+</body>
+
