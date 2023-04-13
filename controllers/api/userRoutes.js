@@ -1,4 +1,4 @@
-// BOILERPLATE FROM MINI-PROJECT
+// I think I'm done?
 const router = require('express').Router();
 const { User } = require('../../models');
 
