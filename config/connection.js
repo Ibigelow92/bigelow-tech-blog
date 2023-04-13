@@ -1,5 +1,4 @@
-// BOILERPLATE (Unit 14, Activity 24) / DONE
-
+// DONE
 const Sequelize = require('sequelize');
 require('dotenv').config();
 
