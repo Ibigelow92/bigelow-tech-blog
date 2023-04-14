@@ -5,17 +5,23 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "seed": "node ./seeds/seed.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.1.0",
+    "connect-session-sequelize": "^7.1.5",
     "controllers": "^0.0.2",
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-handlebars": "^7.0.6",
     "express-session": "^1.17.3",
     "helpers": "^0.0.6",
-    "path": "^0.12.7"
+    "mysql2": "^3.2.1",
+    "path": "^0.12.7",
+    "sequelize": "^6.31.0"
   }
 }
